@@ -1,17 +1,16 @@
-# RUNTIMES ATs
---------------------------
+# Thorntail AT
 
 ## A PROJECT UNDER THE ΙΔΕΑ STATEMENT
 --------------------------------------
 
-Execution of the THORNTAIL AT :
+ThorntailAT is an implementation of the AT Structures for Thorntail
 
-1. (Build the specific project in order to produce the artifacts)
-2. export THORNTAIL_BRANCH_VERSION="version of the Thorntail branch to be tested"
-3. Add your remote testsuite with the Thorntail tests in the file thorntail.sh
-4. mvn clean install
+Steps to execute :
 
+1. (Build Thorntail in order to produce the Thorntail artifacts)
+2. export THORNTAIL_BRANCH_VERSION='version of Thorntail branch'
+3. mvn clean install -Dmaster
 
+## License
 
-# License 
-* [GNU Lesser General Public License Version 2.1](http://www.gnu.org/licenses/lgpl-2.1-standalone.html) ([GPL Cooperation Commitment](https://github.com/gplcc/gplcc/blob/master/Project/COMMITMENT))
+Code distributed under [ASL 2.0](LICENSE.txt)(licenses of the Active MQ test sources) and [GNU Lesser General Public License Version 2.1](http://www.gnu.org/licenses/lgpl-2.1-standalone.html) (for the repo).
