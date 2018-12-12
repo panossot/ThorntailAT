@@ -36,7 +36,16 @@
         </dependencies>
     </dependencyManagement>
 
-    <dependencies>	
+    <dependencies>
+        <dependency>
+            <groupId>io.thorntail</groupId>
+            <artifactId>ejb</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.thorntail</groupId>
+            <artifactId>arquillian</artifactId>
+            <scope>test</scope>
+        </dependency>	
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
