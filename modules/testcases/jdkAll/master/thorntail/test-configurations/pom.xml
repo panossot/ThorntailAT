@@ -54,6 +54,9 @@
 		                <include>org/wildfly/swarm/**/*TestCase.java</include>
                                 <include>org/wildfly/swarm/**/*Test.java</include> 
                                 <include>org/wildfly/swarm/**/*Tests.java</include> 
+				<include>org/remote/tests/**/*TestCase.java</include>
+                                <include>org/remote/tests/**/*Test.java</include> 
+                                <include>org/remote/tests/**/*Tests.java</include> 
 		            </includes> 
 		        </configuration>
 		    </execution>
