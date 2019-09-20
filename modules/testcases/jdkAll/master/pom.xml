@@ -49,6 +49,7 @@
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>fluent-hc</artifactId>
             <scope>test</scope>
+        </dependency>
         <dependency>
             <groupId>io.thorntail</groupId>
             <artifactId>arquillian</artifactId>
