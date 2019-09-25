@@ -58,12 +58,32 @@
 		        <configuration>         
 		            <!-- Tests to execute. -->
 		            <includes>
-		                <include>org/wildfly/swarm/**/JWTAndOpentracingIntegrationTest.java</include>
+		                <include>org/remote/tests/**/JWTAndOpentracingIntegrationTest.java</include>
 		            </includes> 
 		        </configuration>
 		    </execution>
 		</executions>
 	    </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <version>1.10</version>
+                <executions>
+                    <execution>
+                        <id>add-test-source</id>
+                        <phase>generate-test-sources</phase>
+                        <goals>
+                            <goal>add-test-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <source>${basedir}/../src2/main/java</source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
 
         </plugins>
 	
