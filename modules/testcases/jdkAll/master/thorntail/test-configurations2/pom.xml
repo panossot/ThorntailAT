@@ -16,13 +16,20 @@
 
     </parent>
 
-    <artifactId>thorntail-additional-testsuite-thorntailTestsuite-configuration</artifactId>
-    <name>thorntail-additional-testsuite: thorntailTestsuite : configuration</name>
+    <artifactId>thorntail-additional-testsuite-thorntailTestsuite-configuration2</artifactId>
+    <name>thorntail-additional-testsuite: thorntailTestsuite : configuration2</name>
         
     <properties>
 	<maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.thorntail</groupId>
+            <artifactId>microprofile</artifactId>
+        </dependency>
+    </dependencies>
 
     <build>
 
@@ -51,16 +58,8 @@
 		        <configuration>         
 		            <!-- Tests to execute. -->
 		            <includes>
-		                <include>org/wildfly/swarm/**/*TestCase.java</include>
-                                <include>org/wildfly/swarm/**/*Test.java</include> 
-                                <include>org/wildfly/swarm/**/*Tests.java</include> 
-				<include>org/remote/tests/**/*TestCase.java</include>
-                                <include>org/remote/tests/**/*Test.java</include> 
-                                <include>org/remote/tests/**/*Tests.java</include> 
+		                <include>org/wildfly/swarm/**/JWTAndOpentracingIntegrationTest.java</include>
 		            </includes> 
-                            <excludes>
-		                <exclude>org/wildfly/swarm/**/JWTAndOpentracingIntegrationTest.java</exclude>
-		            </excludes> 
 		        </configuration>
 		    </execution>
 		</executions>
